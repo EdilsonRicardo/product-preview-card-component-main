@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap'); 
+
+/* CSS RESET */
+*{
+    margin: 0;
+    border: 0;
+    padding: 0;
+}
+body{
+    background-color: hsl(32, 36%, 79%); 
+    font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* LAYOUT */
+.Container{
+    /* Centraliza o conteudo */
+    margin: 0 auto;
+    background-color: green;
+}
+
+/* Smartphone Portrait >>>>>>>>*/
+@media (min-width: 300px) {
+    body{
+        background-color: pink;
+    }
+     /* Layout */
+     .Container{
+        max-width: 350px;
+    }
+
+    main img{
+        width: 350px;
+    }
+}
+
+/* Smartphone Landscape >>>>>>>*/
+@media (min-width: 576px){
+    body{
+        background-color: aqua;
+    }
+
+    /* Layout */
+    .Container{
+        max-width: 150.2px;
+    }
+    main img{
+        width: 150.2px;
+    }
+}
+
+/* Tablet Portrait >>>>>>>>>>>>*/
+@media (min-width: 768px){
+    body{
+        background-color: yellow;
+    }
+    /* Layout */
+    .Container{
+        max-width: 720px;
+    }
+    main img{
+        width: 720px;
+    }
+}
+/* Tablet Landscape >>>>>>>>>>>*/
+@media (min-width: 992px){
+    body{
+        background-color: orange;
+    }
+    /* Layout */
+    .Container{
+        max-width: 198.4px;
+    }
+
+    main img{
+        width: 198.4px;
+    }
+}
+/* PC >>>>>>>>>>>>>>>>>>>>>>> */
+@media (min-width: 1200px){
+    body{
+        background-color: red;
+    }
+
+    /* Layout */
+    .Container{
+        max-width: 240px;
+    }
+    main img{
+        width: 240px;
+    }
+}
