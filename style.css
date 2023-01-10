@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 
 /* CSS RESET */
 *{
@@ -6,87 +7,163 @@
     border: 0;
     padding: 0;
 }
+
+
 body{
-    background-color: hsl(32, 36%, 79%); 
+    background-color: hsl(32, 36%, 79%);
     font-size: 1em;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+
     font-family: 'Montserrat', sans-serif;
 }
 
 /* LAYOUT */
 .Container{
     /* Centraliza o conteudo */
-    margin: 0 auto;
-    background-color: green;
+    /* margin: 0 auto;  */
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
 }
+
+.Precos{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.button {
+    color: #ffffff;
+    font-family: 'Fraunces', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    background-color: #195623;
+    border-radius: 5px;
+    margin-top: 10px;
+    /* Define o tamanho do botao */
+    width: 95% ;
+    /* Altura */
+    padding: 9px ;
+    margin-bottom: 19px;
+    border: none;
+}
+
+.button:hover {
+    cursor: pointer;
+    background: #268838;
+}
+
+#precoPromo{
+    font-size: 2em;
+    font-family: 'Fraunces', serif;
+    margin-right: 15px;
+    color: #195623;
+}
+
+#precoAntigo{
+    font-size: 0.8em;
+}
+.textos{
+    margin-left: 20px;
+}
+main h1{
+    font-family: 'Fraunces', serif;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 2em;
+    line-height: 30px;
+}
+main #perfume{
+    margin-top: 22px;
+    letter-spacing: 5px;
+}
+main .textos #paragrafo{
+    font-size: 1rem;
+    line-height: 1.5rem;
+
+}
+
 
 /* Smartphone Portrait >>>>>>>>*/
 @media (min-width: 300px) {
-    body{
-        background-color: pink;
-    }
+    
      /* Layout */
      .Container{
         max-width: 350px;
+        flex-direction: column;
     }
 
     main img{
         width: 350px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
     }
+
+
 }
 
 /* Smartphone Landscape >>>>>>>*/
 @media (min-width: 576px){
-    body{
-        background-color: aqua;
-    }
+  
 
     /* Layout */
     .Container{
         max-width: 150.2px;
+        flex-direction: row;
     }
     main img{
-        width: 150.2px;
+        content: url(images/desktop.jpg);
+        width: 150.2;
     }
 }
 
 /* Tablet Portrait >>>>>>>>>>>>*/
 @media (min-width: 768px){
-    body{
-        background-color: yellow;
-    }
+   
     /* Layout */
     .Container{
         max-width: 720px;
     }
-    main img{
-        width: 720px;
-    }
+
 }
+
 /* Tablet Landscape >>>>>>>>>>>*/
 @media (min-width: 992px){
-    body{
-        background-color: orange;
-    }
+   
     /* Layout */
     .Container{
         max-width: 198.4px;
     }
 
-    main img{
-        width: 198.4px;
-    }
+
 }
+
 /* PC >>>>>>>>>>>>>>>>>>>>>>> */
 @media (min-width: 1200px){
-    body{
-        background-color: red;
-    }
+   
 
     /* Layout */
     .Container{
-        max-width: 240px;
+        max-width: 510px;
+        max-height: 410px;
+        flex-direction: row;
     }
     main img{
-        width: 240px;
+        content: url(images/desktop.jpg);
+        width: 260px;
+        height: 410px;
+        border-bottom-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-top-right-radius: 0px;
     }
+    
 }
+
+
+
