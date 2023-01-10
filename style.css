@@ -114,12 +114,16 @@ main .textos #paragrafo{
 
     /* Layout */
     .Container{
-        max-width: 150.2px;
+        max-width: 650.2px;
         flex-direction: row;
+        max-height: 350px;
     }
     main img{
         content: url(images/desktop.jpg);
         width: 150.2;
+        height: 350px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
     }
 }
 
@@ -128,9 +132,18 @@ main .textos #paragrafo{
    
     /* Layout */
     .Container{
-        max-width: 720px;
+        max-width: 550px;
+        flex-direction: column;
+        max-height: 900px;
     }
 
+    main img{
+        width: 550px;
+        height: 500px;
+        border-top-left-radius: 15px;
+        border-top-right-radius: 15px;
+        border-bottom-left-radius: 0px;
+    }
 }
 
 /* Tablet Landscape >>>>>>>>>>>*/
@@ -138,10 +151,21 @@ main .textos #paragrafo{
    
     /* Layout */
     .Container{
-        max-width: 198.4px;
+        max-width: 957px;
+        flex-direction: row;
+        max-height: 500px;
     }
 
+    main img{
+        content: url(images/desktop.jpg);
+        width: 500.2px;
+        height: 500px;
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 15px;
+    }
 
+   
+    
 }
 
 /* PC >>>>>>>>>>>>>>>>>>>>>>> */
