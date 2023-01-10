@@ -1,2 +1,2 @@
 # product-preview-card-component-main
- Frontend Mento Challenge
+ Frontend Mentor Challenge
